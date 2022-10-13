@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;1,300&family=Roboto:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #c3e1df;
+  background-image: url(../img/descarga1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom 10vh;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  font-size: large;
+  display: grid;
+  justify-content: center;
+  background-color: #6c584c;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #f0ead2;
+}
+
+footer {
+  background-color: #dde5b6;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+li {
+  border: 3px solid black;
+}
+
+.mainTittle {
+  color: rgb(189, 153, 107);
+}
+
+h2 {
+  margin: 0.5em;
+}
+
+/* Declaro nombres de grids */
+header {
+  grid-area: header;
+}
+
+.mainTittle {
+  grid-area: mainTittle;
+}
+
+.glassesMain {
+  grid-area: glassesMain;
+}
+
+.storeInfo {
+  grid-area: storeInfo;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.envoltura {
+  margin-bottom: 0.5em;
+  gap: 10px;
+  display: grid;
+  grid-template-areas: "header" "mainTittle" "glassesMain" "storeInfo" "footer";
+}
+
+.storeInfoPadre {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+.logo {
+  max-width: 0%;
+  max-height: 0%;
+}
+
+.storeInfoItem {
+  width: 90%;
+  height: 180px;
+  border: 5px solid #00BFFF;
+}
+
+.glassesMain {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.glassesMainImage {
+  width: 90%;
+  height: 25vh;
+}
+
+footer {
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.paymentMethods {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.socialLinks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.paymentMethodsIcon {
+  width: 2em;
+  height: 2em;
+}
+
+.socialLinksIcon {
+  width: 2em;
+  height: 2em;
+}
+
+@media (min-width: 600px) {
+  .envoltura {
+    margin-bottom: 1.5em;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: "header" "mainTittle" "glassesMain" "storeInfo" "footer";
+  }
+  nav ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 0% 19% 19% 19% 19% 19%;
+    gap: 1%;
+    align-content: center;
+  }
+  .storeInfoPadre {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .paymentMethodsIcon {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .socialLinksIcon {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .glassesMainImage {
+    width: 90%;
+    height: 40vh;
+  }
+  .storeInfo {
+    margin-top: 1.5em;
+  }
+}
+@media (min-width: 768px) {
+  .envoltura {
+    margin-bottom: 1.5em;
+    gap: 10px;
+    display: grid;
+    grid-template-areas: "header" "mainTittle" "glassesMain" "storeInfo" "footer";
+  }
+  .glassesMain {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  .glassesMainImage {
+    margin-top: 1em;
+    width: 95%;
+    height: 30vh;
+  }
+  nav ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 10% 16% 16% 16% 16% 16%;
+    gap: 1%;
+    align-content: center;
+  }
+  .logo {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .storeInfoItem {
+    height: 140px;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 12% 16% 16% 16% 16% 16%;
+    gap: 1%;
+    align-content: center;
+  }
+  .storeInfoPadre {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  li {
+    display: inline-block;
+    padding: 0px;
+    border-style: dotted;
+    border-color: #a98467;
+    text-align: center;
+  }
+  .glassesMainContent {
+    display: grid;
+    width: 100%;
+    justify-items: center;
+  }
+  .glassesMain {
+    align-items: center;
+  }
+  .glassesMainInfo {
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

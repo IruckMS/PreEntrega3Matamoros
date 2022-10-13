@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #c3e1df;
+  background-image: url(../img/descarga1.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom 10vh;
+  background-attachment: fixed;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header{
+  font-size: large;
+  display: grid;
+  justify-content: center;
+  background-color: #6c584c
+}
+
+nav ul li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: #f0ead2;
+}
+
+footer{
+  background-color: #dde5b6;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+li{
+  border: 3px solid black;
+}
+
+.mainTittle{
+  color: rgb(189, 153, 107);
+}
+
+h2 {
+  margin: 0.5em;
+}
+
+/* Declaro nombres de grids */
+
+header{
+  grid-area: header;
+}
+
+.mainTittle{
+  grid-area: mainTittle;
+}
+
+.glassesMain{
+  grid-area: glassesMain;
+}
+
+.storeInfo{
+  grid-area: storeInfo;
+}
+
+footer{
+  grid-area: footer;
+}
